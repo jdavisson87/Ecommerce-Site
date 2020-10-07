@@ -23,8 +23,8 @@ const StripeCheckoutButton = (props) => {
         clearCart();
         alert('Payment Successful');
       })
-      .catch((error) => {
-        console.log('Payment Error: ', JSON.parse(error));
+      .catch((err) => {
+        console.log('Payment Error: ', JSON.parse(err));
         alert(
           'There was an issue processing your payment. Please be sure to use the provided credit card'
         );
