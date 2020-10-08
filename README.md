@@ -2,13 +2,22 @@
 
 (https://jd87-crwn-live.herokuapp.com)
 
-This is a project that I created while learning from the "Complete React Developer 2020(w/ Redux, Hooks, and GraphQL)" taught by Andrei Neagoie and Yihua Zhang.
+This is a project that I created while learning from the "Complete React Developer 2020(w/
+Redux, Hooks, and GraphQL)" taught by Andrei Neagoie and Yihua Zhang.
 
 ## Installation
 
-If the Heroku website is not running, please be sure to clone or download all of the files for this application. You can find these files at https://github.com/jdavisson87/Ecommerce-Site
+If the Heroku website is not running, please be sure to clone or download all of the files
+for this application. You can find these files at https://github.com/jdavisson87/Ecommerce-Site
 
-Once you have downloaded or cloned the files, go into your terminal and be sure to download all of the node packages by running:
+Once you have downloaded or cloned the files, you will need to create a .env file in the root
+folder. You will need to get a Secret Key from Stripe, and in the .env file, you will need to
+create a variable named STRIPE_SECRET_KEY and place your Secret Key. Ex:
+
+STRIPE_SECRET_KEY={Your API key here}
+
+After you create your .env file with your API key, go into your terminal and be sure to download
+all of the node packages by running:
 
 yarn install
 
@@ -34,8 +43,15 @@ Password: 123456
 ### Shopping and Checking Out
 
 If you are on the main page, you can go directly to a clothing section (hats, jackets, etc) or you can
-go to the shop page. The shop page will show 4 items of each section, and allow you to click on the section to go to it's personal page. As you shop, you can add items of clothing to your shopping cart,
-and view what is in your cart by clicking the shopping bag image in the top right of the page. If you are done shopping, go to the shopping bag image, and click the checkout button. On the check out page, you can increase or decrease the items in your cart, delete them all together, and purchase your items. When you select pay now, you will have to enter your email address and billing/shipping address. Then, you will have to enter in your payment information. This application uses Stripe to process payments, however, please use the given credit card information to make these purchases as this is just a portfolio application. The Credit Card information you should use is:
+go to the shop page. The shop page will show 4 items of each section, and allow you to click on the
+section to go to it's personal page. As you shop, you can add items of clothing to your shopping cart,
+and view what is in your cart by clicking the shopping bag image in the top right of the page. If you
+are done shopping, go to the shopping bag image, and click the checkout button. On the check out page,
+you can increase or decrease the items in your cart, delete them all together, and purchase your items.
+When you select pay now, you will have to enter your email address and billing/shipping address. Then,
+you will have to enter in your payment information. This application uses Stripe to process payments,
+however, please use the given credit card information to make these purchases as this is just a
+portfolio application. The Credit Card information you should use is:
 
 CC#: 4242 4242 4242 4242
 EXP: 01/23
